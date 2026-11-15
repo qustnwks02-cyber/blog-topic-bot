@@ -1,8 +1,7 @@
 name: 블로그 화제 재료 모으기
 on:
-  # 매일 자동 실행(예약)은 중지함. 다시 켜려면 아래 두 줄의 # 를 지우세요.
-  # schedule:
-  #   - cron: "0 21 * * *"   # 매일 한국 시간 06:00
+  schedule:
+    - cron: "0 21 * * *"   # 매일 한국 시간 06:00
   workflow_dispatch:        # GitHub에서 '지금 실행' 버튼
 permissions:
   contents: write
